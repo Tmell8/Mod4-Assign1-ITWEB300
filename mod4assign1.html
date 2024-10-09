@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <script src='main.js'></script>
+</head>
+<body>
+  <div id="greeting" style="display:none;">Hello, <span id="userName"></span>!</div>
+
+  <form id="loginForm">
+    <input type="text" id="userId" placeholder="User ID">
+    <input type="password" id="password" placeholder="Password">
+    <button type="submit">Login</button>
+    <div id="errorMessage" style="color:red; display:none;">Incorrect login details. Please try again.</div>
+  </form>
+  <form id="supportForm">
+    <label for="ticketType">Support Type:</label>
+    <select id="ticketType">
+        <option value="">Select</option>
+        <option value="computer">Computer</option>
+        <option value="software">Software</option>
+        <option value="network">Network</option>
+    </select>
+    
+    <div id="computerFields" style="display:none;">
+        <label for="computerType">Computer Type:</label>
+        <input type="text" id="computerType" placeholder="Enter computer type">
+    </div>
+    
+    <div id="softwareFields" style="display:none;">
+        <label for="softwareName">Software Name:</label>
+        <input type="text" id="softwareName" placeholder="Enter software name">
+    </div>
+
+    <div id="networkFields" style="display:none;">
+        <label for="networkIssue">Network Issue:</label>
+        <input type="text" id="networkIssue" placeholder="Describe network issue">
+    </div>
+</form>
+<form id="problemForm">
+  <label for="problemDescription">Problem Description:</label>
+  <textarea id="problemDescription" maxlength="500" placeholder="Describe the issue"></textarea>
+  <div id="charCount">0/500 characters</div>
+</form>
+
+</body>
+</html>
